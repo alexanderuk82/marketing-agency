@@ -11,3 +11,6 @@
 <h2>Responsive presentation of the project</h2>
 <p>Join to my Youtube channel to see more tutorials videos, tips and more about UI/UX and code. 
 <a href="https://www.youtube.com/c/DesignWeblondon"> AlexandersStudio</a></p>
+![presentation-cover.jpg](https://github.com/alexanderuk82/marketing-agency/blob/main/images/presentation-cover.jpg?raw=true)
+
+

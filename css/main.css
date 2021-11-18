@@ -1,10 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital@0;1&family=Poppins:wght@300;400;500&display=swap");
+@import url("https://use.typekit.net/qyg3pux.css");
 :root {
   --main-color: hsl(54, 31%, 88%);
   --secundary-color: hsl(205, 79%, 32%);
   --font-color: hsl(205, 87%, 32%);
   --body-font: "Poppins", sans-serif;
-  --title-font: "Old Standard TT script=latin rev=2";
+  --title-font: ltc-goudy-oldstyle-pro, serif;
   --site-font: 1.3rem;
   --title-color: hsl(205, 87%, 32%);
 }
@@ -710,7 +711,7 @@
 
 .h1-title {
   font-family: var(--title-font);
-  font-size: 6.2rem;
+  font-size: 5rem;
   color: var(--title-color);
   font-weight: regular;
   position: relative;
@@ -995,11 +996,11 @@
 }
 .header__hero--center .special:before {
   content: "est";
-  left: 12rem;
+  left: 8rem;
 }
 .header__hero--center .special:after {
   content: "1999";
-  left: -15rem;
+  left: -8rem;
 }
 @media (min-width: 56.25em) {
   .header__hero--center .special:before, .header__hero--center .special:after {

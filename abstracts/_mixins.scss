@@ -3,7 +3,7 @@
 @mixin title($style) {
   @if $style == 'big' {
     font-family: var(--title-font);
-    font-size: 6.2rem;
+    font-size: 5rem;
     color: var(--title-color);
     font-weight: regular;
     position: relative;

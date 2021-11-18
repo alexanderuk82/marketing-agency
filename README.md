@@ -5,7 +5,7 @@
 <li>Adding animations when scrolling.</li>
 <li>Was designed and developed with the methodology "Mobile First", then for desktop.</li>
 <li>Compatible with all mobile devices and with a beautiful and pleasant user interface.</li>
-<li>UI file included with adobe XD</li>
+<li>adobe XD UI file included </li>
 
 </ul>
 <h2>Responsive presentation of the project</h2>

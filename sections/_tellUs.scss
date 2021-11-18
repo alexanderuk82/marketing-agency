@@ -1,0 +1,165 @@
+@use '../abstracts/' as *;
+.contact {
+  margin: 8rem 0;
+
+  @include responsive(lgdesk) {
+    margin-top: 14rem;
+  }
+  &__container {
+    display: grid;
+    position: relative;
+    &::before {
+      @include responsive(tport) {
+        content: '';
+        display: block;
+        background-image: url('../images/Sketch-form.svg');
+        background-size: 67%;
+        width: 30rem;
+        height: 30rem;
+        background-repeat: no-repeat;
+        position: absolute;
+        background-position-x: -13vh;
+        top: 8rem;
+      }
+    }
+    &::after {
+      @include responsive(lgdesk) {
+        content: '';
+        display: block;
+        background-image: url('../images/Sketch-form-right.svg');
+        background-size: 75%;
+        width: 30rem;
+        height: 11rem;
+        background-repeat: no-repeat;
+        position: absolute;
+        right: -11.5rem;
+        bottom: -7rem;
+      }
+    }
+
+    @include responsive(tport) {
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+    }
+  }
+
+  &__left {
+    text-align: center;
+    padding: 0 3rem;
+    position: relative;
+    p {
+      @include responsive(lgdesk) {
+        text-align: left;
+      }
+    }
+    span {
+      display: none;
+      @include responsive(mbland) {
+        display: inline-flex;
+        margin: 0 1rem;
+        transform: translateY(-0.9rem);
+      }
+      font-size: 3rem;
+    }
+    & > * {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__right {
+    padding: 0 3rem;
+    margin-top: 4rem;
+  }
+
+  &__form {
+    margin: 2rem 0;
+    display: grid;
+    row-gap: 2.2rem;
+    h1:nth-child(3) {
+      margin-top: 2rem;
+    }
+    &__field {
+      border-bottom: 2px solid var(--secundary-color);
+      padding: 1.5rem 0;
+      position: relative;
+      &--input {
+        border: 0;
+        font-family: inherit;
+        color: var(--secundary-color);
+        background: transparent;
+        width: 100%;
+        padding: 0;
+        z-index: 10;
+        transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+        &:focus {
+          outline: none;
+          &:invalid {
+            background-color: rgba(255, 0, 0, 0.315);
+          }
+
+          &:invalid + label {
+            opacity: 0.5;
+            transform: translateY(-3rem);
+            font-size: 1.2rem;
+            font-weight: 500;
+          }
+        }
+      }
+
+      label {
+        transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+        position: absolute;
+        left: 0;
+        padding-bottom: 0;
+        top: 1.6rem;
+        opacity: 0.7;
+        z-index: 0;
+        font-size: 1.5rem;
+      }
+
+      &--input:focus + label,
+      &--input:valid + label {
+        transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+        transform: translateY(-3rem);
+        font-size: 1.2rem;
+        font-weight: 500;
+      }
+    }
+
+    &__options {
+    }
+
+    &__option-btn {
+      border-radius: 16.47px;
+      border: 2px solid var(--secundary-color);
+      padding: 1.2rem 1.7rem;
+      background: transparent;
+      color: var(--secundary-color);
+      cursor: pointer;
+      transform: scale(1);
+      transition: all 0.2s;
+      margin-right: 1rem;
+      margin-bottom: 1.7rem;
+      &.active {
+        transform: scale(0.9);
+        background-color: var(--secundary-color);
+        color: #fff;
+      }
+      // &:focus,
+      // &:valid {
+      // }
+    }
+
+    textarea {
+      resize: none;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+
+    .btn--submit {
+      width: 17rem;
+    }
+  }
+}

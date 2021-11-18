@@ -1,0 +1,67 @@
+@use '../abstracts/' as *;
+.footer {
+  margin-top: 2rem;
+  background-color: var(--secundary-color);
+  position: relative;
+  @include responsive(lgdesk) {
+    &:before {
+      content: '';
+      display: block;
+      background-color: #fff;
+      width: 100%;
+      height: 2px;
+      position: absolute;
+      top: 15rem;
+    }
+  }
+
+  &__container {
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    row-gap: 2.2rem;
+    justify-content: center;
+    column-gap: 6rem;
+
+    @include responsive(lgdesk) {
+      column-gap: 2rem;
+      justify-items: center;
+      padding: 10rem 3rem;
+      padding-bottom: 8rem;
+    }
+    &__col {
+      .h2-white {
+        color: #fff;
+        text-transform: capitalize;
+        margin-bottom: 1.3rem;
+
+        @include responsive(lgdesk) {
+          margin-bottom: 5.3rem;
+        }
+      }
+
+      &--link {
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+  &__copyright {
+    display: block;
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 2rem 0;
+
+    @include responsive(lgdesk) {
+      margin-left: 8rem;
+      text-align: left;
+      padding-bottom: 3rem;
+    }
+    a {
+      color: var(--main-color);
+    }
+  }
+}

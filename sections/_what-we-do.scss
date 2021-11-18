@@ -1,0 +1,75 @@
+.wedo {
+  padding: 8rem 0;
+
+  margin-top: 1rem;
+  background-color: var(--secundary-color);
+  color: #fff;
+  text-align: center;
+  position: relative;
+
+  & img:nth-child(odd) {
+    display: none;
+    @media (min-width: 56.25em) {
+      display: block;
+      width: 20rem;
+      height: 20rem;
+    }
+  }
+
+  & img:first-child {
+    margin-top: 29rem;
+    align-self: end;
+    margin-left: 6rem;
+  }
+  & img:last-child {
+    margin-right: 6rem;
+  }
+  @media (min-width: 56.25em) {
+    display: grid;
+    grid-template-columns: min-content 1fr min-content;
+  }
+
+  .h2 {
+    color: #fff;
+  }
+
+  &__title {
+    margin-top: 5rem;
+    p {
+      font-size: 3.3rem;
+      font-family: var(--title-font);
+      margin-bottom: 1.2rem;
+      padding-bottom: 1rem;
+      cursor: pointer;
+      &:first-child {
+        font-style: italic;
+      }
+
+      &:not(:last-child) {
+        &:after {
+          content: '';
+          display: block;
+          background-color: #fff;
+          width: 31rem;
+          height: 0.2rem;
+          margin: 1rem auto 0rem;
+        }
+      }
+    }
+  }
+
+  &:after {
+    content: '';
+    background-image: url('../images/Sketch.svg');
+    background-repeat: no-repeat;
+    background-size: 50%;
+    width: 45rem;
+    height: 5rem;
+    position: absolute;
+    right: -46vh;
+
+    @media (min-width: 56.25em) {
+      bottom: 5rem;
+    }
+  }
+}

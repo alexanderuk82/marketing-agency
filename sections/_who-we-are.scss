@@ -1,0 +1,83 @@
+@use '../abstracts/' as *;
+
+.whoweare {
+  padding: 8rem 0;
+  background-color: var(--secundary-color);
+  color: #fff;
+  text-align: center;
+  padding-bottom: 23rem;
+  @include responsive(tport) {
+    padding-bottom: 6rem;
+  }
+  @include responsive(lgdesk) {
+    padding-bottom: 9rem;
+  }
+
+  &__content {
+    display: grid;
+    row-gap: 3rem;
+    position: relative;
+    &:after {
+      content: '';
+      background-image: url('../images/Sketch-what-we-do-bottom.svg');
+      height: 14rem;
+      width: 53rem;
+      position: absolute;
+      bottom: -27vh;
+      background-repeat: no-repeat;
+      background-size: 95%;
+      right: -47vh;
+      @include responsive(tport) {
+        bottom: -10vh;
+      }
+    }
+
+    &:before {
+      content: '';
+      display: none;
+      @include responsive(tport) {
+        display: block;
+        background-image: url('../images/Sketch-who-we-are.svg');
+        height: 14rem;
+        width: 53rem;
+        position: absolute;
+        background-repeat: no-repeat;
+        background-size: 95%;
+        left: -10vh;
+      }
+    }
+  }
+
+  span {
+    font-style: italic;
+  }
+  .h2,
+  .h1-title {
+    color: #fff;
+  }
+  p {
+    padding: 1.5rem 3rem;
+    text-align: left;
+
+    @include responsive(tport) {
+      padding: 1.5rem 4rem;
+      width: 65%;
+      margin: 0 auto;
+    }
+    @include responsive(lgdesk) {
+      padding: 1.5rem 0;
+    }
+  }
+  &__divider {
+    background-color: #fff;
+    width: 60%;
+    margin: 0 auto;
+    height: 3px;
+    @include responsive(tport) {
+      width: 63%;
+    }
+    @include responsive(lgdesk) {
+      width: 67%;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="75" height="75" viewBox="0 0 75 75">
+  <defs>
+    <filter id="Ellipse_1" x="0" y="0" width="75" height="75" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feFlood flood-opacity="0.122"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="scrooll-up" transform="translate(-1882.375 -487.957)">
+    <g transform="matrix(1, 0, 0, 1, 1882.37, 487.96)" filter="url(#Ellipse_1)">
+      <g id="Ellipse_1-2" data-name="Ellipse 1" transform="translate(15 12)" fill="#fff" stroke="#355e98" stroke-width="1">
+        <circle cx="22.5" cy="22.5" r="22.5" stroke="none"/>
+        <circle cx="22.5" cy="22.5" r="22" fill="none"/>
+      </g>
+    </g>
+    <g id="upgrade" transform="translate(1906.128 503.036)">
+      <path id="Path_3" data-name="Path 3" d="M19.7,27H11.721a1.6,1.6,0,0,0-1.6,1.6v1.6a1.6,1.6,0,0,0,1.6,1.6H19.7a1.6,1.6,0,0,0,1.6-1.6V28.6A1.6,1.6,0,0,0,19.7,27Zm0,3.191H11.721V28.6H19.7Z" transform="translate(-1.963 -7.197)" fill="#355e98"/>
+      <path id="Path_4" data-name="Path 4" d="M23.886,12.059,14.311,2.484a.8.8,0,0,0-1.128,0L3.608,12.059a.8.8,0,0,0,.565,1.362H8.162v3.191a1.6,1.6,0,0,0,1.6,1.6h7.979a1.6,1.6,0,0,0,1.6-1.6V13.42h3.989a.8.8,0,0,0,.564-1.362Zm-6.149-.234v4.787H9.758V11.825H6.1l7.648-7.648L21.4,11.825Z" fill="#355e98"/>
+    </g>
+    <text id="scrool_up" data-name="scrool up" transform="translate(1920.375 535.957)" fill="#355e98" font-size="7" font-family="SegoeUI, Segoe UI" letter-spacing="-0.04em"><tspan x="-13.145" y="0">scrool up</tspan></text>
+  </g>
+</svg>

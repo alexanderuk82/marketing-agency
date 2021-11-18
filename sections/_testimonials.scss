@@ -1,0 +1,112 @@
+@use '../abstracts/' as *;
+
+.testimonial {
+  text-align: center;
+  padding: 0 3rem;
+  margin-bottom: 4rem;
+
+  .h1-title {
+    @include responsive(lgdesk) {
+      font-size: 8.2rem;
+      width: 100%;
+      text-align: right;
+      padding-right: 19rem;
+    }
+  }
+  &__logo {
+    width: 11.5rem;
+    height: 11.5rem;
+    margin: 0 auto;
+    display: block;
+    transform: translateX(29vw);
+  }
+
+  &__container {
+    position: relative;
+    @include responsive(lgdesk) {
+      display: grid;
+      grid-template-columns: 60% 30%;
+      justify-items: end;
+      text-align: left;
+
+      &::after {
+        content: '';
+        position: absolute;
+        background-image: url('../images/Sketch-right.svg');
+        width: 20rem;
+        height: 10rem;
+        background-repeat: no-repeat;
+        width: 23rem;
+        height: 10rem;
+        background-repeat: no-repeat;
+        background-size: 134%;
+        top: -5rem;
+        right: 1rem;
+      }
+    }
+  }
+
+  &__content {
+    margin-top: 11rem;
+    position: relative;
+
+    @include responsive(lgdesk) {
+      margin-top: 9rem;
+    }
+    &__wrapper {
+      display: none;
+
+      &.active {
+        display: block;
+
+        @include responsive(lgdesk) {
+          margin-left: 7rem;
+          margin-top: -6rem;
+        }
+      }
+    }
+
+    &__quote {
+      transition: all 1s;
+      font-size: 3rem;
+      font-family: var(--title-font);
+      line-height: 4rem;
+      margin: 2rem 0;
+      padding-top: 2rem;
+    }
+
+    small {
+      font-size: 1.4rem;
+      transition: all 4s;
+    }
+  }
+
+  &__btns {
+    margin-top: 1.5rem;
+    cursor: pointer;
+
+    @include responsive(lgdesk) {
+      align-self: end;
+    }
+
+    & > * {
+      background-color: transparent;
+      border: 0;
+
+      &:not(:last-child) {
+        margin-right: 4.2rem;
+      }
+    }
+  }
+
+  &__content::before {
+    content: '';
+    display: block;
+    background-image: url('../images/quote.svg');
+    background-repeat: no-repeat;
+    width: 7rem;
+    height: 7rem;
+    position: absolute;
+    top: -20%;
+  }
+}

@@ -1,0 +1,29 @@
+@use '../abstracts/' as *;
+.btn {
+  @include button(btn-main);
+}
+
+.scroll {
+  background-image: url('../images/scrooll-up.svg');
+  background-repeat: no-repeat;
+  position: fixed;
+  right: -1rem;
+  width: 6rem;
+  height: 6rem;
+  background-size: 90%;
+  z-index: 10000;
+  background-color: transparent;
+  border: none;
+  opacity: 0;
+  cursor: pointer;
+  bottom: -10%;
+  transform: scale(1);
+  transition: all 0.2s;
+  &.show {
+    opacity: 1;
+    bottom: 0;
+  }
+  &:focus {
+    transform: scale(0.9);
+  }
+}

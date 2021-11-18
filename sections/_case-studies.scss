@@ -1,0 +1,98 @@
+@use '../abstracts/' as *;
+
+.featured {
+  text-align: center;
+  margin: 6rem 0;
+  padding: 0 3rem;
+  position: relative;
+  &:after {
+    content: '';
+    display: none;
+
+    @include responsive(tport) {
+      display: block;
+      background-image: url('../images/b2b-img.svg');
+      background-repeat: no-repeat;
+      position: absolute;
+      z-index: 100;
+      width: 20rem;
+      height: 10rem;
+      background-size: 49%;
+      right: 0;
+    }
+  }
+  &__grid {
+    margin-top: 5rem;
+    display: grid;
+    row-gap: 4rem;
+    justify-content: center;
+
+    @include responsive(tport) {
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: center;
+      grid-template-rows: repeat(10, 1%);
+      row-gap: 4.8rem;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    @include responsive(lgdesk) {
+      row-gap: 5.5rem;
+      height: 127vh;
+    }
+  }
+  #img-1 {
+    @include responsive(tport) {
+      grid-row: 1/7;
+    }
+  }
+
+  #img-2 {
+    @include responsive(tport) {
+      grid-row: 2/8;
+    }
+  }
+
+  #img-3 {
+    @include responsive(tport) {
+      grid-row: 7/10;
+    }
+  }
+
+  #img-4 {
+    @include responsive(tport) {
+      grid-row: 8/11;
+    }
+  }
+
+  &__box {
+    width: 30rem;
+    height: auto;
+    cursor: pointer;
+
+    @include responsive(lgdesk) {
+      width: 37rem;
+    }
+
+    &--img {
+      object-fit: cover;
+      width: 100%;
+    }
+
+    &--title {
+      font-family: var(--title-font);
+      font-size: 2.6rem;
+      line-height: 2.4rem;
+      text-align: left;
+      margin-top: 1rem;
+      border-bottom: 2px solid var(--secundary-color);
+      padding-bottom: 0.9rem;
+    }
+  }
+
+  .btn {
+    margin-top: 8rem;
+    width: 17rem;
+    @include button(btn-main);
+  }
+}

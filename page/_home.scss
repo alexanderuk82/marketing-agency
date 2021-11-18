@@ -1,0 +1,28 @@
+@use '../abstracts/' as *;
+@use '../sections/' as *;
+@use '../base/' as *;
+@use '../components/' as *;
+@use '../layout/' as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  @include responsive(lgdesk) {
+    font-size: 68.5%;
+  }
+}
+
+body {
+  background-color: var(--main-color);
+  font-family: var(--body-font);
+  font-size: var(--site-font);
+  color: var(--font-color);
+  overflow-x: hidden;
+}

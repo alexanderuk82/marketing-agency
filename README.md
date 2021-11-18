@@ -9,6 +9,5 @@
 
 </ul>
 <h2>Responsive presentation of the project</h2>
-<p>
-<img src="https://www.alexandersstudio.uk/wp-content/uploads/2021/11/presentation-cover.jpg" alt="marketing agency website" style="max-width: 100%;">
-</p>
+<p>Join to my Youtube channel to see more tutorials videos, tips and more about UI/UX and code. 
+<a href="https://www.youtube.com/c/DesignWeblondon"> AlexandersStudio</a></p>

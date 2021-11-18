@@ -11,7 +11,11 @@
 <h2>Responsive presentation of the project</h2>
 <p>Join to my Youtube channel to see more tutorials videos, tips and more about UI/UX and code. 
 <a href="https://www.youtube.com/c/DesignWeblondon"> AlexandersStudio</a></p>
-<img src="images/presentation-cover.jpg">
+
+<h2>🎥 Wacth live website 👇👇</h2>
+>>Link: https://marketing-social-agency.netlify.app/
+<p></p>
+<img src="images/presentation-cover.jpg" widt="100%">
 
 
 

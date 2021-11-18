@@ -28,6 +28,7 @@
 }
 .wedo {
   padding: 8rem 0;
+  overflow: hidden;
   margin-top: 1rem;
   background-color: var(--secundary-color);
   color: #fff;
@@ -87,11 +88,11 @@
   content: "";
   background-image: url("../images/Sketch.svg");
   background-repeat: no-repeat;
-  background-size: 50%;
-  width: 45rem;
-  height: 5rem;
+  background-size: contain;
+  width: 22rem;
+  height: 9rem;
   position: absolute;
-  right: -46vh;
+  right: -10rem;
 }
 @media (min-width: 56.25em) {
   .wedo:after {
@@ -216,6 +217,7 @@
   color: #fff;
   text-align: center;
   padding-bottom: 23rem;
+  overflow: hidden;
 }
 @media (min-width: 56.25em) {
   .whoweare {
